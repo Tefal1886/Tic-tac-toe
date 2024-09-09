@@ -1,0 +1,80 @@
+
+body {
+    background-image: radial-gradient(rgb(137, 137, 137), rgb(11, 10, 10));
+    background-repeat: no-repeat;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-plate {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    justify-items: stretch;
+    height: 545px;
+    width: 600px;
+    gap: 3px;
+    border-left: groove 6px white;
+    border-right: groove 6px white;
+}
+
+.game-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    font-size: 40px;
+}
+
+.game-item:hover {
+    background-color: rgb(186, 185, 138);
+    transition-duration: 200ms;
+    filter: drop-shadow(5px 5px 5px rgba(234, 219, 219, 0.37)) drop-shadow(5px 5px 5px rgba(234, 230, 230, 0.37));
+}
+
+.result-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    color: rgb(255, 206, 72);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+}
+
+.reset-score , .play-again {
+    font-size: 35px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 13px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.reset-score:active , .play-again:active {
+    font-size: 32px;
+}
+.result {
+    text-align: center;
+    height: 200px;
+    font-size: 60px;
+}
